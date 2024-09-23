@@ -20,3 +20,6 @@ build
 # other
 eclipse
 run
+
+# Local dependency. It's distribution outside CurseForge is disallowed by the mod author.
+/localDependency/HeatAndClimateLib_1.12.2-3.9.3.jar

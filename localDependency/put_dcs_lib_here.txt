@@ -1,0 +1,9 @@
+README
+
+HeatAndClimate mod needs dependency HeatAndClimateLib.
+
+This dependency mod is not allowed to be distributed outside CurseForge by its author, so Curse Maven does not contain it.
+
+For developing use, just download it here: https://www.curseforge.com/minecraft/mc-mods/heat-and-climate-lib
+
+and put its JAR file in this directory.
