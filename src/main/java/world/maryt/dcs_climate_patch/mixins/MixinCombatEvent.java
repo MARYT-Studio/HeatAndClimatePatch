@@ -38,9 +38,7 @@ public abstract class MixinCombatEvent {
                     ordinal = 1
             )
     )
-    public int getRobberLevel(Enchantment nbttagcompound, ItemStack enchantment) {
-        int robberLevel = heatAndClimatePatch$isHurtEntityPlayer ? 0 : EnchantmentHelper.getEnchantmentLevel(nbttagcompound, enchantment);
-        System.out.println(robberLevel);
-        return robberLevel;
+    public int getRobberLevel(Enchantment ench, ItemStack enchantment) {
+        return heatAndClimatePatch$isHurtEntityPlayer ? 0 : EnchantmentHelper.getEnchantmentLevel(ench, enchantment);
     }
 }
