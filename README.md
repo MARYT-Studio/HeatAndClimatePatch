@@ -4,11 +4,14 @@
 
 This mod includes my personal patch(es) for Heat And Climate Mod (CurseForge Page), namely its 1.12.2 version.
 
-It contains only one patch now: remove the teleporting feature of Ivy Badge, the green magic badge.
-
 All modification(s) are made by Mixin, so this mod contains no code of Heat And Climate Mod and its dependency lib.
 
 It is developed mainly for my modpack, but you can use it freely under the license of this project and license of Heat And Climate Mod & Lib.
+
+## Features
+
+- Remove the teleporting of Ivy Badge, the green magic badge, after it prevents your death.
+- Prevent the Deepsea Badge, the blue magic badge, from triggered when any GUI is opened. So that when you are typing during chat and pressed "X" (the default blue badge trigger key), you won't be teleported unexpectedly.
 
 ## About TemplateDevEnv
 
