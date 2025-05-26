@@ -10,6 +10,12 @@ It is developed mainly for my modpack, but you can use it freely under the licen
 
 ## Features
 
+### Enchantments
+
+- Provide configuration in this mod's config file for Robber enchantment to not affect players.
+
+### Magic Items
+
 - Remove the teleporting of Ivy Badge, the green magic badge, after it prevents your death.
 - Prevent the Deepsea Badge, the blue magic badge, from triggered when any GUI is opened. So that when you are typing during chat and pressed "X" (the default blue badge trigger key), you won't be teleported unexpectedly.
 
