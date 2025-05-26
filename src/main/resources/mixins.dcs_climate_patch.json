@@ -1,11 +1,15 @@
 {
-	"package": "world.maryt.dcs_climate_patch.mixins",
-	"required": true,
-	"refmap": "mixins.${mod_id}.refmap.json",
-	"target": "@env(DEFAULT)",
-	"minVersion": "0.8.5",
-	"compatibilityLevel": "JAVA_8",
-	"mixins": ["MixinMagicCommonEvent"],
-	"server": [],
-	"client": []
+  "package" : "world.maryt.dcs_climate_patch.mixins",
+  "required" : true,
+  "refmap" : "mixins.${mod_id}.refmap.json",
+  "target" : "@env(DEFAULT)",
+  "minVersion" : "0.8.5",
+  "compatibilityLevel" : "JAVA_8",
+  "mixins" : [
+	  "MixinMagicCommonEvent"
+  ],
+  "server" : [],
+  "client" : [
+    "MixinClientProxyD"
+  ]
 }
