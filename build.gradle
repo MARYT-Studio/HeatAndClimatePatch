@@ -144,13 +144,6 @@ dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     }
-
-    // Mod Dependencies
-    implementation rfg.deobf("curse.maven:heat-and-climate-296096:4448881")
-    // This is a local dependency.
-    // It is not provided by Curse Maven, due to it is disallowed by its author.
-    // Follow the guide of `localDependency/put_dcs_lib_here.txt`.
-    implementation files('localDependency/HeatAndClimateLib_1.12.2-3.9.3.jar')
 }
 
 apply from: 'gradle/scripts/dependencies.gradle'
