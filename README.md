@@ -10,6 +10,10 @@ It is developed mainly for my modpack, but you can use it freely under the licen
 
 ## Features
 
+### Machines
+
+Fix: Incubator now save its parameters, rather than lose them after player teleport to other dimensions, log out or any situation else.
+
 ### Enchantments
 
 - Provide configuration in this mod's config file for Robber enchantment to not affect players.
