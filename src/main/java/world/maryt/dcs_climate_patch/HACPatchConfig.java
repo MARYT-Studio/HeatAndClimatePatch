@@ -16,6 +16,10 @@ public class HACPatchConfig {
 	@Config.Comment("If true, Robber enchantment will not to affect players.")
 	public static boolean no_robber_to_players = false;
 
+	@Config.LangKey(config + "remove_titanium_armor_enchantment")
+	@Config.Comment("If true, Titanium armor will not be bind to Projectile Protection enchantment.")
+	public static boolean remove_titanium_armor_enchantment = false;
+
 	@SubscribeEvent
 	public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
 		if (event.getModID().equals(HeatAndClimatePatch.MOD_ID)) {
