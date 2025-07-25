@@ -14,10 +14,12 @@ public class HACPatchConfig {
 
 	@Config.LangKey(config + "no_robber_to_players")
 	@Config.Comment("If true, Robber enchantment will not to affect players.")
+	@Config.RequiresMcRestart
 	public static boolean no_robber_to_players = false;
 
 	@Config.LangKey(config + "remove_titanium_armor_enchantment")
 	@Config.Comment("If true, Titanium armor will not be bind to Projectile Protection enchantment.")
+	@Config.RequiresMcRestart
 	public static boolean remove_titanium_armor_enchantment = false;
 
 	@SubscribeEvent
