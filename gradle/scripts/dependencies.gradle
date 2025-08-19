@@ -23,4 +23,11 @@ dependencies {
     // It is not provided by Curse Maven, due to it is disallowed by its author.
     // Follow the guide of `localDependency/put_dcs_lib_here.txt`.
     implementation files('localDependency/HeatAndClimateLib_1.12.2-3.9.3.jar')
+
+    // JEI/HEI
+    implementation rfg.deobf('curse.maven:had-enough-items-557549:4810661')
+
+    // Debug tools
+    runtimeOnly rfg.deobf('curse.maven:ftb-utilities-forge-237102:3157548')
+    runtimeOnly rfg.deobf('curse.maven:ftb-library-legacy-forge-237167:2985811')
 }

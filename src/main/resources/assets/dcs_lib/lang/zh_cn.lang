@@ -1,0 +1,78 @@
+
+## item
+item.dcs_checker_normal.name=气候检查器
+item.dcs_repair_patty.name=修补油灰
+
+## massage
+dcs.climate.tip.checker=右击能够检测该位置的气候信息（范围2）
+dcs_climate.tip.durability=耐久
+dcs_climate.tip.harvestlevel=挖掘等级
+dcs_climate.tip.resistance=气候抗性
+
+dcs.tip.shift=按下左Shift键查看更多
+
+dcs_climate.smelting=气候冶炼
+dcs_climate.recipe=气候合成
+dcs_climate.mill=石臼
+dcs_climate.fluidcraft=流体合成
+dcs_climate.reactor=化学反应器
+dcs_climate.crop=气候作物
+dcs_climate.effective=气候效果
+dcs_climate.spinning=纺织机
+dcs_climate.biome=生物群系气候信息
+dcs_climate.crusher=锤式粉碎机配方
+
+death.attack.dcs_heat=%1$s 被烤的焦黄。
+death.attack.dcs_cold=%1$s 变成了冰冻果子露。
+death.attack.dcs_water=%1$s 淹死了。
+death.attack.dcs_dry=%1$s 被风干了。
+death.attack.dcs_wind=%1$s 被风吹走了。
+death.attack.dcs_suffocation=%1$s 窒息了。
+death.attack.dcs_machine=%1$s 因工伤去世。
+
+dcs.potion.freeze_res=严寒耐性
+potion.effect.dcs.freeze_res=严寒耐性药水
+splash_potion.effect.dcs.freeze_res=喷溅型严寒耐性药水
+lingering_potion.effect.dcs.freeze_res=滞留型严寒耐性药水
+tipped_arrow.effect.dcs.freeze_res=严寒耐性箭矢
+
+dcs.tip.spring=春季
+dcs.tip.summer=夏季
+dcs.tip.autumn=秋季
+dcs.tip.winter=冬季
+
+dcs.tip.heat_name=温度
+dcs.tip.heat_name2=温度
+dcs.tip.humidity_name=湿度
+dcs.tip.humidity_name2=湿度
+dcs.tip.airflow_name=气流
+dcs.tip.airflow_name2=气流
+
+dcs.tip.heat.ABSOLUTE=绝对零度
+dcs.tip.heat.FROSTBITE=严寒
+dcs.tip.heat.CRYOGENIC=低温
+dcs.tip.heat.COLD=寒冷
+dcs.tip.heat.COOL=凉爽
+dcs.tip.heat.NORMAL=常温
+dcs.tip.heat.WARM=温暖
+dcs.tip.heat.HOT=炎热
+dcs.tip.heat.BOIL=沸腾
+dcs.tip.heat.OVEN=炉温
+dcs.tip.heat.KILN=窑温
+dcs.tip.heat.SMELTING=熔融
+dcs.tip.heat.UHT=超高温
+dcs.tip.heat.INFERNO=炼狱
+
+dcs.tip.hum.DRY=干燥
+dcs.tip.hum.NORMAL=正常
+dcs.tip.hum.WET=潮湿
+dcs.tip.hum.UNDERWATER=浸水
+
+dcs.tip.air.TIGHT=密闭
+dcs.tip.air.NORMAL=正常
+dcs.tip.air.FLOW=微风
+dcs.tip.air.WIND=大风
+
+dcs.tip.date=第 %1s 年的第 %2s 天
+
+
