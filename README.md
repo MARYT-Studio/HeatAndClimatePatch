@@ -10,6 +10,15 @@ It is developed mainly for my modpack, but you can use it freely under the licen
 
 ## Features
 
+### Localizations
+- Now, when the game does not use real time, the game date in the HUD in the lower left corner of the game is localized rather than hard-coded as “Year x / Day y.” 
+- JEI metal heat treatment recipe display GUI's hard-coded “Within 100 ticks” is now localized text. 
+- Localization of all climate parameter names.
+
+These new features were based on fixing hard-coded elements.
+
+You can check the language files in the mod to create language files for the languages you use.
+
 ### Machines
 
 Fix: Incubator now save its parameters, rather than lose them after player teleport to other dimensions, log out or any situation else.
