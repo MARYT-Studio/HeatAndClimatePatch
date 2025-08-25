@@ -1,3 +1,6 @@
 dcs.tip.date=Year %1s / Day %2s
-
+dcs.climate_checker.title=== Current Climate ==
+dcs.climate_checker.temperature=Temperature: %s
+dcs.climate_checker.humidity=Humidity: %s
+dcs.climate_checker.airflow=Airflow: %s
 

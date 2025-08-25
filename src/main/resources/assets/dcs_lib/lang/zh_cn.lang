@@ -74,5 +74,9 @@ dcs.tip.air.FLOW=微风
 dcs.tip.air.WIND=大风
 
 dcs.tip.date=第 %1s 年的第 %2s 天
+dcs.climate_checker.title=== 此处的气候信息 ==
+dcs.climate_checker.temperature=温度：
+dcs.climate_checker.humidity=湿度：
+dcs.climate_checker.airflow=气流：
 
 
