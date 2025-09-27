@@ -47,3 +47,8 @@ This template runs on Java 21, with **Gradle 8.10.1** + **[RetroFuturaGradle](ht
 5. Open the project folder in IDEA. When prompted, click "Load Gradle Project" as it detects the `build.gradle`, if you weren't prompted, right-click the project's `build.gradle` in IDEA, select `Link Gradle Project`, after completion, hit `Refresh All` in the gradle tab on the right.
 6. Run gradle tasks such as `runClient` and `runServer` in the IDEA gradle tab, or use the auto-imported run configurations like `1. Run Client`.
 7. Due to this is a mainly Mixin project, it is advisable to use latest [MinecraftDev Fork for RetroFuturaGradle](https://github.com/eigenraven/MinecraftDev/releases).
+
+## Credit
+
+- @CleanroomMC for vintage infrastructures.
+- @ZekerZhayard for Mixin coding techniques.

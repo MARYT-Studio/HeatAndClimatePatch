@@ -1,44 +1,25 @@
 package world.maryt.dcs_climate_patch.mixins;
 
+import com.llamalad7.mixinextras.sugar.Local;
 import defeatedcrow.hac.main.event.CombatEvent;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.Redirect;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import world.maryt.dcs_climate_patch.HACPatchConfig;
 
 @Mixin(value = CombatEvent.class, remap = false)
 public abstract class MixinCombatEvent {
-
-    @Unique
-    boolean heatAndClimatePatch$isHurtEntityPlayer;
-
-    @Inject(
+    @ModifyVariable(
             method = "onHurt",
             at = @At(
-                    value = "HEAD"
-            )
+                    value = "INVOKE_ASSIGN",
+                    target = "Lnet/minecraft/enchantment/EnchantmentHelper;getEnchantmentLevel(Lnet/minecraft/enchantment/Enchantment;Lnet/minecraft/item/ItemStack;)I"
+            ),
+            name = "robber"
     )
-    public void markEntityIsPlayer(LivingHurtEvent event, CallbackInfo ci) {
-        heatAndClimatePatch$isHurtEntityPlayer = HACPatchConfig.no_robber_to_players && (event.getEntityLiving() instanceof EntityPlayer);
-    }
-
-    @Redirect(
-            method = "onHurt",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/enchantment/EnchantmentHelper;getEnchantmentLevel(Lnet/minecraft/enchantment/Enchantment;Lnet/minecraft/item/ItemStack;)I",
-                    ordinal = 1
-            )
-    )
-    public int getRobberLevel(Enchantment ench, ItemStack enchantment) {
-        return heatAndClimatePatch$isHurtEntityPlayer ? 0 : EnchantmentHelper.getEnchantmentLevel(ench, enchantment);
+    private int modifyRobberLevel(int robber, @Local(ordinal = 0) EntityLivingBase living) {
+        return HACPatchConfig.no_robber_to_players && living instanceof EntityPlayer ? 0 : robber;
     }
 }
