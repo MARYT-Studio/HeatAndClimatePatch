@@ -1,4 +1,4 @@
-package world.maryt.dcs_climate_patch.mixins;
+package world.maryt.dcs_climate_patch.mixins.tweaks;
 
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
@@ -6,6 +6,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import defeatedcrow.hac.magic.event.MagicCommonEvent;
 import org.spongepowered.asm.mixin.Overwrite;
 
+// Tweak:  Remove dimension and position record event.
+//         Not know how HeatAndClimate Mod use this record NBT to teleport players,
+//         but removing these NBTs will disable the teleporting.
 @Mixin(value = MagicCommonEvent.class, remap = false)
 public abstract class MixinMagicCommonEvent {
     /**

@@ -1,4 +1,4 @@
-package world.maryt.dcs_climate_patch.mixins;
+package world.maryt.dcs_climate_patch.mixins.tweaks;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import defeatedcrow.hac.main.event.CombatEvent;
@@ -9,8 +9,11 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import world.maryt.dcs_climate_patch.HACPatchConfig;
 
+// Tweak: Robber Enchantment can be disabled when it's targeted to players
+// Credit @ZekerZhayard
 @Mixin(value = CombatEvent.class, remap = false)
 public abstract class MixinCombatEvent {
+
     @ModifyVariable(
             method = "onHurt",
             at = @At(

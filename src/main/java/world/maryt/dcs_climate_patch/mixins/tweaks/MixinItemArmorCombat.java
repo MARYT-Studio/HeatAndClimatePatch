@@ -1,4 +1,4 @@
-package world.maryt.dcs_climate_patch.mixins;
+package world.maryt.dcs_climate_patch.mixins.tweaks;
 
 import defeatedcrow.hac.core.base.ITexturePath;
 import defeatedcrow.hac.core.util.DCUtil;
@@ -22,6 +22,7 @@ import world.maryt.dcs_climate_patch.HACPatchConfig;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Map;
 
+// Tweak: Remove the default Projectile Protection enchantment for Titanium Armor.
 @Mixin(value = ItemArmorCombat.class, remap = false)
 public abstract class MixinItemArmorCombat extends ItemArmorDC implements ITexturePath{
 

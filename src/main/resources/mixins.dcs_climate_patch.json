@@ -6,16 +6,17 @@
   "minVersion": "0.8.5",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinCombatEvent",
-    "MixinDCHeatTreatmentWrapper",
-    "MixinDCTimeHelper",
-    "MixinItemArmorCombat",
-    "MixinItemClimateChecker",
-    "MixinMagicCommonEvent",
-    "MixinTileIncubator"
+    "fixes.MixinDCHeatTreatmentWrapper",
+    "fixes.MixinDCTimeHelper",
+    "fixes.MixinItemClimateChecker",
+    "fixes.MixinTileIncubator",
+
+    "tweaks.MixinCombatEvent",
+    "tweaks.MixinItemArmorCombat",
+    "tweaks.MixinMagicCommonEvent"
   ],
   "server": [],
   "client": [
-    "MixinClientProxyD"
+    "fixes.MixinClientProxyD"
   ]
 }

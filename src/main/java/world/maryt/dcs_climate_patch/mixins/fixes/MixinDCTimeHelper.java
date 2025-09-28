@@ -1,4 +1,4 @@
-package world.maryt.dcs_climate_patch.mixins;
+package world.maryt.dcs_climate_patch.mixins.fixes;
 
 import defeatedcrow.hac.config.CoreConfigDC;
 import defeatedcrow.hac.core.util.DCTimeHelper;
@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+// Fix: Hardcoded texts at the Date info at the left corner of game screen
 @Mixin(value = DCTimeHelper.class, remap = false)
 public abstract class MixinDCTimeHelper {
     @Shadow

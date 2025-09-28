@@ -1,4 +1,4 @@
-package world.maryt.dcs_climate_patch.mixins;
+package world.maryt.dcs_climate_patch.mixins.fixes;
 
 import defeatedcrow.hac.core.item.ItemClimateChecker;
 import net.minecraft.util.text.ITextComponent;
@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
+// Fix: Hardcoded texts in Climate Checker info
 @Mixin(value = ItemClimateChecker.class, remap = false)
 public abstract class MixinItemClimateChecker {
     @ModifyArg(

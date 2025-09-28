@@ -1,4 +1,4 @@
-package world.maryt.dcs_climate_patch.mixins;
+package world.maryt.dcs_climate_patch.mixins.fixes;
 
 import defeatedcrow.hac.plugin.jei.DCHeatTreatmentWrapper;
 import net.minecraft.client.resources.I18n;
@@ -7,6 +7,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
+// Fix: Hardcoded texts in Heat Treatment recipes hints
 @Mixin(value = DCHeatTreatmentWrapper.class, remap = false)
 public abstract class MixinDCHeatTreatmentWrapper {
 

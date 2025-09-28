@@ -1,4 +1,4 @@
-package world.maryt.dcs_climate_patch.mixins;
+package world.maryt.dcs_climate_patch.mixins.fixes;
 
 import defeatedcrow.hac.api.climate.*;
 import defeatedcrow.hac.core.base.DCLockableTE;
@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+// Fix: Incubator lost its setting data when its TileEntity unload
 @Mixin(value = TileIncubator.class, remap = false)
 public abstract class MixinTileIncubator extends DCLockableTE implements ISidedInventory {
     @Shadow public IClimate current;
