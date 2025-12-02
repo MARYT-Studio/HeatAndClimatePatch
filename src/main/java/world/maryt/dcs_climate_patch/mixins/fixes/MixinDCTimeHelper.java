@@ -2,7 +2,6 @@ package world.maryt.dcs_climate_patch.mixins.fixes;
 
 import defeatedcrow.hac.config.CoreConfigDC;
 import defeatedcrow.hac.core.util.DCTimeHelper;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -37,7 +36,7 @@ public abstract class MixinDCTimeHelper {
             }
 
             int year = getYear(world);
-            cir.setReturnValue(I18n.format("dcs.tip.date", year, day));
+            cir.setReturnValue(String.format("%d;%d", year, day));
         }
     }
 }
