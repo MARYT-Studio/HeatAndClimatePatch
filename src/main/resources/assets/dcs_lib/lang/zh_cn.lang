@@ -79,4 +79,25 @@ dcs.climate_checker.temperature=温度：
 dcs.climate_checker.humidity=湿度：
 dcs.climate_checker.airflow=气流：
 
+# Climate Smelting
+dcs.recipe_type.freezing=冷冻
+dcs.recipe_type.standard_state=标准状态
+dcs.recipe_type.drying=干燥
+dcs.recipe_type.cultivation=培养
+dcs.recipe_type.fermentation=发酵
+dcs.recipe_type.cooking=烹饪
+dcs.recipe_type.boiling=煮沸
+dcs.recipe_type.steaming=蒸制
+dcs.recipe_type.combustion=燃烧
+dcs.recipe_type.pyrolysis=热解
+dcs.recipe_type.smelting=冶炼
+
+dcs.climate_smelting.place.require_the_processing_device=该配方需要处理设备
+dcs.climate_smelting.place.proceeds_as_a_placed_object=材料放置在地上合成
+dcs.climate_smelting.place.proceeds_as_a_drop_item_entity=材料以掉落物状态合成
+
+dcs.climate_smelting.freq.less_frequency_process=需要很长时间完成
+dcs.climate_smelting.freq.rapid_process=立即完成
+dcs.climate_smelting.freq.middle_frequency_process=需要一段时间完成
+
 

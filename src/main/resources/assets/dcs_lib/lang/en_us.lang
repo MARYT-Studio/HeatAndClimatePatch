@@ -4,3 +4,24 @@ dcs.climate_checker.temperature=Temperature: %s
 dcs.climate_checker.humidity=Humidity: %s
 dcs.climate_checker.airflow=Airflow: %s
 
+# Climate Smelting
+dcs.recipe_type.freezing=Freezing
+dcs.recipe_type.standard_state=Standard State
+dcs.recipe_type.drying=Drying
+dcs.recipe_type.cultivation=Cultivation
+dcs.recipe_type.fermentation=Fermentation
+dcs.recipe_type.cooking=Cooking
+dcs.recipe_type.boiling=Boiling
+dcs.recipe_type.steaming=Steaming
+dcs.recipe_type.combustion=Combustion
+dcs.recipe_type.pyrolysis=Pyrolysis
+dcs.recipe_type.smelting=Smelting
+
+dcs.climate_smelting.place.require_the_processing_device=Require the processing device.
+dcs.climate_smelting.place.proceeds_as_a_placed_object=Proceeds as a placed object.
+dcs.climate_smelting.place.proceeds_as_a_drop_item_entity=Proceeds as a drop item entity.
+
+dcs.climate_smelting.freq.less_frequency_process=Less Frequency Process
+dcs.climate_smelting.freq.rapid_process=Rapid Process
+dcs.climate_smelting.freq.middle_frequency_process=Middle Frequency Process
+

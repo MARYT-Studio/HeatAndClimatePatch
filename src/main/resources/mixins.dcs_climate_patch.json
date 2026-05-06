@@ -1,22 +1,23 @@
 {
-  "package": "world.maryt.dcs_climate_patch.mixins",
-  "required": true,
-  "refmap": "mixins.${mod_id}.refmap.json",
-  "target": "@env(DEFAULT)",
-  "minVersion": "0.8.5",
-  "compatibilityLevel": "JAVA_8",
-  "mixins": [
+  "package" : "world.maryt.dcs_climate_patch.mixins",
+  "required" : true,
+  "refmap" : "mixins.${mod_id}.refmap.json",
+  "target" : "@env(DEFAULT)",
+  "minVersion" : "0.8.5",
+  "compatibilityLevel" : "JAVA_8",
+  "mixins" : [
+    "fixes.MixinClimateSmeltingCategory",
+    "fixes.MixinClimateSmeltingWrapper",
     "fixes.MixinDCHeatTreatmentWrapper",
     "fixes.MixinDCTimeHelper",
     "fixes.MixinItemClimateChecker",
     "fixes.MixinTileIncubator",
-
     "tweaks.MixinCombatEvent",
     "tweaks.MixinItemArmorCombat",
     "tweaks.MixinMagicCommonEvent"
   ],
-  "server": [],
-  "client": [
+  "server" : [],
+  "client" : [
     "fixes.MixinAdvancedHUDEvent",
     "fixes.MixinClientProxyD"
   ]
