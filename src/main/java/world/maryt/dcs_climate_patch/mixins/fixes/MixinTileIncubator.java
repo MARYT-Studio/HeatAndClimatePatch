@@ -1,11 +1,12 @@
 package world.maryt.dcs_climate_patch.mixins.fixes;
 
 import defeatedcrow.hac.api.climate.*;
-import defeatedcrow.hac.core.base.ClimateReceiverLockable;
+import defeatedcrow.hac.core.base.DCLockableTE;
 import defeatedcrow.hac.food.block.TileIncubator;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.nbt.NBTTagCompound;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -14,7 +15,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 // Fix: Incubator lost its setting data when its TileEntity unload
 @Mixin(value = TileIncubator.class, remap = false)
-public abstract class MixinTileIncubator  extends ClimateReceiverLockable implements ISidedInventory {
+public abstract class MixinTileIncubator extends DCLockableTE implements ISidedInventory {
+
+    @Shadow
+    public IClimate current = null;
+
     @Unique
     public void heatAndClimatePatch$dataStore(IClimate climate) {
         NBTTagCompound data = this.getTileData();

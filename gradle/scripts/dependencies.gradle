@@ -28,10 +28,10 @@ repositories {
 }
 
 dependencies {
-    implementation rfg.deobf("curse.maven:heat-and-climate-296096:3958528")
+    implementation rfg.deobf("curse.maven:heat-and-climate-296096:4448881")
     // This is a local dependency.
     // It is not provided by Curse Maven, due to it is disallowed by its author.
-    // Follow the guide of `localDependency/put_dcs_lib_here.txt`.
+    // Follow the guide of `localDependency/put_local_dependencies_here.txt`.
     implementation rfg.deobf("3940:469:HeatAndClimateLib_1.12.2-3.9.3")
 
     // JEI/HEI

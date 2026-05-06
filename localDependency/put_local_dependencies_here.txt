@@ -1,0 +1,3 @@
+README
+
+For developing use, just download mod jars from CurseForge and put them in this directory. These binaries will not be synced to remote.
