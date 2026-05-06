@@ -20,6 +20,7 @@ build
 # other
 eclipse
 run
+localDependency
 
 # Local binary dependency is ignored.
 !/localDependency/put_dcs_lib_here.txt
